@@ -3,7 +3,7 @@ var swLocation = '/twittor/sw.js'
 
 if(navigator.serviceWorker){
     if(url.includes('localhost')){
-        sw = '/sw.js';
+        swLocation = '/sw.js';
     }
     navigator.serviceWorker.register(swLocation);
 }
